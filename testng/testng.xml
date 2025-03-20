@@ -5,6 +5,7 @@
     <classes>
       <class name="com.test.basics.Demo1"/>
       <class name="com.test.basics.Sample"/>
+      <class name="com.test.basics.Practise"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
