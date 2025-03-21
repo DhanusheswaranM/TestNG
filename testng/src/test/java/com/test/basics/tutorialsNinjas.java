@@ -25,7 +25,7 @@ public class tutorialsNinjas {
   @Test
   public void verify() {
 	  SoftAssert soft = new SoftAssert();
-	  String str1 = "Register Accounts";
+	  String str1 = "Register Account";
 	  String str2 = dvr.findElement(By.xpath("//h1[contains(text(),'Register Account')]")).getText();
 //	  Assert.assertEquals(str1, str2);
 	  soft.assertEquals(str2, str1, "Its wrong");
@@ -49,6 +49,7 @@ public class tutorialsNinjas {
 
   @AfterTest
   public void afterTest() {
-  }
+	  dvr.quit();
+	  }
 
 }

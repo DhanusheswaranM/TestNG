@@ -13,7 +13,7 @@ public class Demo_Test {
 	public WebDriver dvr ;
   @Test
   public void verifyTitle() {
-	  String expectedtitle = "yahoo";
+	  String expectedtitle = "Google";
 	  String actualtitle = dvr.getTitle();
 	  Assert.assertEquals(actualtitle, expectedtitle,"Title is not same");
   }
