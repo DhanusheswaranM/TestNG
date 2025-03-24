@@ -9,11 +9,13 @@ import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 
 public class tutorialsNinjas {
-	public WebDriver dvr ;
+	public ChromeDriver dvr ;
   @Test
   public void navigate() {
 	  dvr.findElement(By.xpath("//nav[@id='top']//div//div[2]//ul//li[2]//a//span[2]")).click();
@@ -26,6 +28,8 @@ public class tutorialsNinjas {
   public void verify() {
 	  SoftAssert soft = new SoftAssert();
 	  String str1 = "Register Account";
+	  WebDriverWait wait = new WebDriverWait(dvr,Duration.ofSeconds(10));
+	  
 	  String str2 = dvr.findElement(By.xpath("//h1[contains(text(),'Register Account')]")).getText();
 //	  Assert.assertEquals(str1, str2);
 	  soft.assertEquals(str2, str1, "Its wrong");
@@ -41,7 +45,9 @@ public class tutorialsNinjas {
   }
   @BeforeTest
   public void beforeTest() {
-	  dvr = new ChromeDriver();
+	  ChromeOptions options = new ChromeOptions();
+	  options.addArguments("----Headless");
+	  dvr = new ChromeDriver(options);
 	  dvr.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	  dvr.manage().window().maximize();
 	  dvr.get("https://tutorialsninja.com/demo/");
