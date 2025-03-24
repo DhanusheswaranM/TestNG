@@ -28,6 +28,11 @@
     <scope>test</scope>
 </dependency>
 
+  	<dependency>
+  		<groupId>DemoMaven01</groupId>
+  		<artifactId>DemoMavenJS</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
   </dependencies>
 
   <build>
