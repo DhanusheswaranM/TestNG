@@ -26,12 +26,12 @@ public class DPExcel {
 			int noOfRows = sheet.getPhysicalNumberOfRows();
 			int noOfCols = row.getLastCellNum();
 			Cell cell ;
-			data = new String[noOfRows-1][noOfCols];
-			for(int i = 1 ; i < noOfRows ; i++) {
+			data = new String[noOfRows][noOfCols];
+			for(int i = 0 ; i <= noOfRows ; i++) {
 				for(int j = 0 ; j < noOfCols ; j++) {
 					row = sheet.getRow(i);
 					cell = row.getCell(j);
-					data[i-1][j] = cell.getStringCellValue();
+					data[i][j] = cell.getStringCellValue();
 					}
 			}
 		}catch(Exception e) {
