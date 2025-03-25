@@ -10,7 +10,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.testng.annotations.DataProvider;
 
 public class DPExcel {
-	@DataProvider(name = "excelData")
+	@DataProvider(name = "excelData" , parallel = true)
 	public Object[][] excelDataProvider() throws IOException{
 		Object[][] arrobj = getExcelData("D:\\EXCEL\\DataProviderExcel.xlsx","Sheet1");
 		return arrobj;
