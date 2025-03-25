@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.tests.LoginTest">
+      <class name="com.test.basics.DataProvider_Excel">
         <methods>
-          <include name="close"/>
-          <include name="loginTest"/>
+          <include name="search" invocation-numbers="0 1"/>
           <include name="setup"/>
+          <include name="afterMethod"/>
         </methods>
-      </class> <!-- com.tests.LoginTest -->
+      </class> <!-- com.test.basics.DataProvider_Excel -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

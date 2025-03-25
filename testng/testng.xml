@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-  <test name="Login">
+<suite name="Suite" parallel="methods" thread-count="3" data-provider-thread-count="2">
+  <test name="search">
     <classes>
-      <class name="com.tests.LoginTest"/>
-      <class name="com.tests.DashboardTest"/>
+      <class name="com.test.basics.DataProvider_Excel"/>
     </classes>
-    </test>
-</suite> <!-- Suite -->
+  </test>
+</suite>
