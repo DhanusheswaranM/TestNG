@@ -6,6 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.*;
 
 import java.time.Duration;
@@ -30,19 +31,20 @@ public class DataProvider_Demo {
     }
 
     @Test(dataProvider = "testData" , dataProviderClass = DPDemo.class)
-    public void search(String keyword) {
+    public void search(String keyword1 , String keyword2) {
         WebDriver webDriver = driver.get();
         webDriver.get("https://www.google.com");
 
         WebDriverWait wait = new WebDriverWait(webDriver, Duration.ofSeconds(30));
         WebElement searchBox = wait.until(ExpectedConditions.presenceOfElementLocated(By.name("q")));
 
-        searchBox.sendKeys(keyword);
+        searchBox.sendKeys(keyword1," ",keyword2);
         searchBox.submit();
 
         WebElement searchResults = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@id='search']")));
-        System.out.println("Search result displayed for: " + keyword);
+        System.out.println("Search result displayed for: " + keyword1);
         System.out.println("Page Title: " + webDriver.getTitle());
+        Assert.assertTrue(webDriver.getTitle().contains(keyword1),"Its is not matched");
     }
 
     @AfterMethod

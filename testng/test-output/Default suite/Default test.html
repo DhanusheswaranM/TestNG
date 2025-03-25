@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/4/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Mar 25 16:22:54 IST 2025</td>
+<td>Started on:</td><td>Tue Mar 25 18:51:23 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>31 seconds (31168 ms)</td>
+<tr><td>Total time:</td><td>23 seconds (23060 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,19 +76,497 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.test.basics.DataProvider_Excel.search()'><b>search</b><br>Test class: com.test.basics.DataProvider_Excel<br>Parameters: Selenium, tools</td>
+<td title='com.test.basics.DataProvider_Excel.afterMethod()'><b>afterMethod</b><br>Test class: com.test.basics.DataProvider_Excel</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: java.io.IOException: Output closed
+Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: driver.version: ChromiumDriver
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient$4.send(JdkHttpClient.java:322)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient$4.close(JdkHttpClient.java:341)
+	at org.openqa.selenium.devtools.Connection.close(Connection.java:226)
+	at org.openqa.selenium.devtools.DevTools.close(DevTools.java:61)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:439)
+	at org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:418)
+	at com.test.basics.DataProvider_Excel.afterMethod(DataProvider_Excel.java:44)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:805)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:781)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.io.IOException: Output closed
+	at java.net.http/jdk.internal.net.http.websocket.WebSocketImpl.sendClose(WebSocketImpl.java:313)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient$4.lambda$send$2(JdkHttpClient.java:287)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient$4.send(JdkHttpClient.java:312)
+	... 22 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace1439765018", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1439765018'><pre>org.openqa.selenium.WebDriverException: java.io.IOException: Output closed
+Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: driver.version: ChromiumDriver
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient$4.send(JdkHttpClient.java:322)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient$4.close(JdkHttpClient.java:341)
+	at org.openqa.selenium.devtools.Connection.close(Connection.java:226)
+	at org.openqa.selenium.devtools.DevTools.close(DevTools.java:61)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:439)
+	at org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:418)
+	at com.test.basics.DataProvider_Excel.afterMethod(DataProvider_Excel.java:44)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:805)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:781)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.io.IOException: Output closed
+	at java.net.http/jdk.internal.net.http.websocket.WebSocketImpl.sendClose(WebSocketImpl.java:313)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient$4.lambda$send$2(JdkHttpClient.java:287)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient$4.send(JdkHttpClient.java:312)
+	... 22 more
+</pre></div></td>
+<td>0</td>
+<td>com.test.basics.DataProvider_Excel@22ff4249</td></tr>
+<tr>
+<td title='com.test.basics.DataProvider_Excel.afterMethod()'><b>afterMethod</b><br>Test class: com.test.basics.DataProvider_Excel</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: java.io.IOException: Output closed
+Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: driver.version: ChromiumDriver
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient$4.send(JdkHttpClient.java:322)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient$4.close(JdkHttpClient.java:341)
+	at org.openqa.selenium.devtools.Connection.close(Connection.java:226)
+	at org.openqa.selenium.devtools.DevTools.close(DevTools.java:61)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:439)
+	at org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:418)
+	at com.test.basics.DataProvider_Excel.afterMethod(DataProvider_Excel.java:44)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:805)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:781)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.io.IOException: Output closed
+	at java.net.http/jdk.internal.net.http.websocket.WebSocketImpl.sendClose(WebSocketImpl.java:313)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient$4.lambda$send$2(JdkHttpClient.java:287)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient$4.send(JdkHttpClient.java:312)
+	... 22 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace980346437", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace980346437'><pre>org.openqa.selenium.WebDriverException: java.io.IOException: Output closed
+Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: driver.version: ChromiumDriver
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient$4.send(JdkHttpClient.java:322)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient$4.close(JdkHttpClient.java:341)
+	at org.openqa.selenium.devtools.Connection.close(Connection.java:226)
+	at org.openqa.selenium.devtools.DevTools.close(DevTools.java:61)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:439)
+	at org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:418)
+	at com.test.basics.DataProvider_Excel.afterMethod(DataProvider_Excel.java:44)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:805)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:781)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.io.IOException: Output closed
+	at java.net.http/jdk.internal.net.http.websocket.WebSocketImpl.sendClose(WebSocketImpl.java:313)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient$4.lambda$send$2(JdkHttpClient.java:287)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient$4.send(JdkHttpClient.java:312)
+	... 22 more
+</pre></div></td>
+<td>0</td>
+<td>com.test.basics.DataProvider_Excel@22ff4249</td></tr>
+<tr>
+<td title='com.test.basics.DataProvider_Excel.afterMethod()'><b>afterMethod</b><br>Test class: com.test.basics.DataProvider_Excel</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.lang.Integer.intValue()&quot; because the return value of &quot;org.openqa.selenium.remote.Response.getStatus()&quot; is null
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:99)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:446)
+	at org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:418)
+	at com.test.basics.DataProvider_Excel.afterMethod(DataProvider_Excel.java:44)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:805)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:781)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1992963255", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1992963255'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.lang.Integer.intValue()&quot; because the return value of &quot;org.openqa.selenium.remote.Response.getStatus()&quot; is null
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:99)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:446)
+	at org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:418)
+	at com.test.basics.DataProvider_Excel.afterMethod(DataProvider_Excel.java:44)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:805)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:781)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>com.test.basics.DataProvider_Excel@22ff4249</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.test.basics.DataProvider_Excel.afterMethod()'><b>afterMethod</b><br>Test class: com.test.basics.DataProvider_Excel</td>
 <td></td>
-<td>3</td>
+<td>0</td>
+<td>com.test.basics.DataProvider_Excel@22ff4249</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.test.basics.DataProvider_Excel.search()'><b>search</b><br>Test class: com.test.basics.DataProvider_Excel<br>Parameters: Java, language</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=134.0.6998.118)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dd3bf6c2913cb68a20dda2dcd97d6391, sendKeysToElement {value=[Ljava.lang.CharSequence;@149bf815, id=f.4CC6C1DAA249037AD1F9B77C8C9D7160.d.3C221119BF61F2C8B0674732F8B606D6.e.49}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\DHANUS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54012}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54012/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (dd3bf6c2913cb68a20dda2dcd97d6391)] -&gt; id: APjFqb]
+Session ID: dd3bf6c2913cb68a20dda2dcd97d6391
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at com.test.basics.DataProvider_Excel.search(DataProvider_Excel.java:34)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2019398462", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2019398462'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=134.0.6998.118)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dd3bf6c2913cb68a20dda2dcd97d6391, sendKeysToElement {value=[Ljava.lang.CharSequence;@149bf815, id=f.4CC6C1DAA249037AD1F9B77C8C9D7160.d.3C221119BF61F2C8B0674732F8B606D6.e.49}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\DHANUS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54012}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54012/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (dd3bf6c2913cb68a20dda2dcd97d6391)] -&gt; id: APjFqb]
+Session ID: dd3bf6c2913cb68a20dda2dcd97d6391
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at com.test.basics.DataProvider_Excel.search(DataProvider_Excel.java:34)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>9</td>
+<td>com.test.basics.DataProvider_Excel@22ff4249</td></tr>
+<tr>
+<td title='com.test.basics.DataProvider_Excel.search()'><b>search</b><br>Test class: com.test.basics.DataProvider_Excel<br>Parameters: a, b</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElement {using=xpath, value=//div[@id=&apos;search&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\DHANUS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54012}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54012/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:176)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at com.test.basics.DataProvider_Excel.search(DataProvider_Excel.java:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div><a href='#' onClick='toggleBox("stack-trace917950370", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace917950370'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElement {using=xpath, value=//div[@id=&apos;search&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\DHANUS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54012}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54012/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:176)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at com.test.basics.DataProvider_Excel.search(DataProvider_Excel.java:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>12</td>
+<td>com.test.basics.DataProvider_Excel@22ff4249</td></tr>
+<tr>
+<td title='com.test.basics.DataProvider_Excel.search()'><b>search</b><br>Test class: com.test.basics.DataProvider_Excel<br>Parameters: Selenium, tools</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=134.0.6998.118)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dd3bf6c2913cb68a20dda2dcd97d6391, sendKeysToElement {value=[Ljava.lang.CharSequence;@42b01d53, id=f.4CC6C1DAA249037AD1F9B77C8C9D7160.d.3C221119BF61F2C8B0674732F8B606D6.e.49}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\DHANUS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54012}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54012/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (dd3bf6c2913cb68a20dda2dcd97d6391)] -&gt; id: APjFqb]
+Session ID: dd3bf6c2913cb68a20dda2dcd97d6391
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at com.test.basics.DataProvider_Excel.search(DataProvider_Excel.java:34)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2101150839", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2101150839'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=134.0.6998.118)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dd3bf6c2913cb68a20dda2dcd97d6391, sendKeysToElement {value=[Ljava.lang.CharSequence;@42b01d53, id=f.4CC6C1DAA249037AD1F9B77C8C9D7160.d.3C221119BF61F2C8B0674732F8B606D6.e.49}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\DHANUS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54012}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54012/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (dd3bf6c2913cb68a20dda2dcd97d6391)] -&gt; id: APjFqb]
+Session ID: dd3bf6c2913cb68a20dda2dcd97d6391
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at com.test.basics.DataProvider_Excel.search(DataProvider_Excel.java:34)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>10</td>
 <td>com.test.basics.DataProvider_Excel@22ff4249</td></tr>
 <tr>
 <td title='com.test.basics.DataProvider_Excel.search()'><b>search</b><br>Test class: com.test.basics.DataProvider_Excel<br>Parameters: TestNG, framework</td>
-<td></td>
-<td>5</td>
-<td>com.test.basics.DataProvider_Excel@22ff4249</td></tr>
-<tr>
-<td title='com.test.basics.DataProvider_Excel.search()'><b>search</b><br>Test class: com.test.basics.DataProvider_Excel<br>Parameters: Java, language</td>
-<td></td>
-<td>5</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=134.0.6998.118)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dd3bf6c2913cb68a20dda2dcd97d6391, sendKeysToElement {value=[Ljava.lang.CharSequence;@78b46799, id=f.4CC6C1DAA249037AD1F9B77C8C9D7160.d.3C221119BF61F2C8B0674732F8B606D6.e.49}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\DHANUS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54012}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54012/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (dd3bf6c2913cb68a20dda2dcd97d6391)] -&gt; id: APjFqb]
+Session ID: dd3bf6c2913cb68a20dda2dcd97d6391
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at com.test.basics.DataProvider_Excel.search(DataProvider_Excel.java:34)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div><a href='#' onClick='toggleBox("stack-trace243414268", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace243414268'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=134.0.6998.118)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dd3bf6c2913cb68a20dda2dcd97d6391, sendKeysToElement {value=[Ljava.lang.CharSequence;@78b46799, id=f.4CC6C1DAA249037AD1F9B77C8C9D7160.d.3C221119BF61F2C8B0674732F8B606D6.e.49}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\DHANUS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54012}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54012/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (dd3bf6c2913cb68a20dda2dcd97d6391)] -&gt; id: APjFqb]
+Session ID: dd3bf6c2913cb68a20dda2dcd97d6391
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at com.test.basics.DataProvider_Excel.search(DataProvider_Excel.java:34)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>9</td>
 <td>com.test.basics.DataProvider_Excel@22ff4249</td></tr>
 </table><p>
 </body>

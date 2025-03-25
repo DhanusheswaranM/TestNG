@@ -4,9 +4,13 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class DPDemo {
+//	@DataProvider(name = "testData" , parallel =true)
+//	public Object[][] dataprovfun(){//it takes as object
+//		return new Object[][] {{"selenium"} , {"Testng"} , {"Automation"}};
+//	}
 	@DataProvider(name = "testData" , parallel =true)
 	public Object[][] dataprovfun(){//it takes as object
-		return new Object[][] {{"selenium"} , {"Testng"} , {"Automation"}};
+		return new Object[][] {{"selenium","tools"} , {"Testng","framework"} , {"Java","language"}};
 	}
 									
 }

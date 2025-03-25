@@ -5,7 +5,7 @@
     <classes>
       <class name="com.test.basics.DataProvider_Excel">
         <methods>
-          <include name="search" invocation-numbers="0 1"/>
+          <include name="search" invocation-numbers="0 1 2 3"/>
           <include name="setup"/>
           <include name="afterMethod"/>
         </methods>

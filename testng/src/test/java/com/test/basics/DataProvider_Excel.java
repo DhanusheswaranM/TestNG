@@ -27,11 +27,13 @@ public class DataProvider_Excel {
 
     @Test(dataProvider = "excelData" , dataProviderClass = DPExcel.class)
     public void search(String keyword1 , String keyword2) throws InterruptedException {
+    	WebDriverWait wait = new WebDriverWait(dvr,Duration.ofSeconds(10));
         WebElement txtBox= dvr.findElement(By.id("APjFqb"));
         txtBox.sendKeys(keyword1," ",keyword2);
         System.out.println("Keyword entered as :"+keyword1+" "+keyword2);
-        txtBox.sendKeys(Keys.ENTER);
+        txtBox.submit();
         System.out.println("Search result are displayed.");
+        WebElement search = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@id='search']")));
         System.out.println("Result : "+dvr.getTitle());
         Thread.sleep(3000);
         Assert.assertTrue(dvr.getTitle().contains(keyword1),"search is not correct");

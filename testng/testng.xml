@@ -3,7 +3,7 @@
 <suite name="Suite" parallel="methods" data-provider-thread-count="4" thread-count="4">
   <test name="SearchTest">
     <classes>
-      <class name="com.test.basics.DataProvider_Excel"/>
+      <class name="com.test.basics.DataProvider_Demo"/>
     </classes>
   </test>
 </suite>
